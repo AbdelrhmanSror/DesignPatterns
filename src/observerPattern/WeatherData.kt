@@ -13,7 +13,6 @@ fun main() {
 }
 
 
-
 class WeatherData : Observable {
     var temperature: Float? = null
         private set
@@ -21,7 +20,8 @@ class WeatherData : Observable {
         private set
     var pressure: Float? = null
         private set
-    private val observers: MutableList<Observer?>
+    private val observers: MutableList<Observer?> = ArrayList()
+
     private fun measurementsChanged() {
         notifyObserver()
     }
@@ -45,9 +45,5 @@ class WeatherData : Observable {
         for (observer in observers) {
             observer!!.update(temperature!!, humidity!!, pressure!!)
         }
-    }
-
-    init {
-        observers = ArrayList()
     }
 }
