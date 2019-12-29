@@ -3,7 +3,7 @@ package factoryPattern
 enum class PizzaTypes {
     CHEESE,VEGGIE
 }
-class NYStyleCheesePizza : Pizza() {
+object NYStyleCheesePizza : Pizza() {
     init {
         name = "“NY Style Sauce and Cheese Pizza"
         dough = "Thin Crust Dough"
@@ -13,7 +13,7 @@ class NYStyleCheesePizza : Pizza() {
 
 }
 
-class NYStyleVeggiePizza : Pizza() {
+object NYStyleVeggiePizza : Pizza() {
     init {
         name = "“NY Style Sauce and Veggie Pizza"
         dough = "Thin Crust Dough"
@@ -23,7 +23,7 @@ class NYStyleVeggiePizza : Pizza() {
 
 }
 
-class CHStyleCheesePizza : Pizza() {
+object CHStyleCheesePizza : Pizza() {
     init {
         name = "Chicago Style Deep Dish Cheese Pizza"
         dough = "Extra Thick Crust Dough"
@@ -33,7 +33,7 @@ class CHStyleCheesePizza : Pizza() {
 
 }
 
-class CHStyleVeggiePizza : Pizza() {
+object CHStyleVeggiePizza : Pizza() {
     init {
         name = "Chicago Style Deep Dish Veggie Pizza"
         dough = "Extra Thick Crust Dough"

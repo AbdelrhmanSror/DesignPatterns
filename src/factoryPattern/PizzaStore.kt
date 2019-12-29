@@ -18,8 +18,8 @@ abstract class PizzaStore {
 class NYpizzaStore : PizzaStore() {
     override fun createPizza(type: PizzaTypes): Pizza? {
         return when (type) {
-            PizzaTypes.CHEESE -> NYStyleCheesePizza()
-            PizzaTypes.VEGGIE -> NYStyleVeggiePizza()
+            PizzaTypes.CHEESE -> NYStyleCheesePizza
+            PizzaTypes.VEGGIE -> NYStyleVeggiePizza
             else -> null
         }
     }
@@ -28,8 +28,8 @@ class NYpizzaStore : PizzaStore() {
 class CHpizzaStore : PizzaStore() {
     override fun createPizza(type: PizzaTypes): Pizza? {
         return when (type) {
-            PizzaTypes.CHEESE -> CHStyleCheesePizza()
-            PizzaTypes.VEGGIE -> CHStyleVeggiePizza()
+            PizzaTypes.CHEESE -> CHStyleCheesePizza
+            PizzaTypes.VEGGIE -> CHStyleVeggiePizza
             else -> null
         }
     }
