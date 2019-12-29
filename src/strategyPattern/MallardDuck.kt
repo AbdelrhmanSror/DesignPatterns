@@ -1,4 +1,4 @@
-package strategiePattern
+package strategyPattern
 
 class MallardDuck : Duck() {
     override fun setFlyBehavior(fb: FlyBehaviour?) {

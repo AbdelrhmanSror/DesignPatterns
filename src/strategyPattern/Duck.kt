@@ -1,4 +1,4 @@
-package strategiePattern
+package strategyPattern
 
 
 fun main() {

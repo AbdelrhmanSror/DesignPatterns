@@ -1,4 +1,4 @@
-package strategiePattern
+package strategyPattern
 
 interface QuakeBehaviour {
     fun quake()

@@ -1,4 +1,4 @@
-package strategiePattern
+package strategyPattern
 
 class Quack : QuakeBehaviour {
     override fun quake() {
